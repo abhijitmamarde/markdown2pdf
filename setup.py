@@ -7,26 +7,21 @@ def fread(filepath):
 
 
 setup(
-    name='Markdown2PDF',
-    version='0.1.3',
-    url='https://github.com/kxxoling/markdown2pdf',
+    name='markdown2pdf3',
+    version='0.2.3',
+    url='https://github.com/panhaoyu/markdown2pdf',
     license='MIT',
-    author='Kane Blueriver',
-    author_email='kxxoling@gmail.com',
-    description='A tool converts Markdown file to PDF, '
-                'originally designed for developers\' resume release.',
+    author='panhaoyu',
+    author_email='haoyupan@aliyun.com',
+    description='A tool converts Markdown file to PDF.',
     long_description=fread('README.rst'),
-    packages=['markdown2pdf'],
-    package_data={'markdown2pdf': ['themes/*']},
+    packages=['markdown2pdf3'],
     zip_safe=False,
     platforms='any',
-    install_requires=[
-        'weasyprint',
-        'markdown2',
-    ],
+    install_requires=[],
     entry_points={
         'console_scripts': [
-            'md2pdf = markdown2pdf:main',
+            'md2pdf = markdown2pdf3:execute',
         ]
     },
     classifiers=[
@@ -38,10 +33,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
     ],
 )
